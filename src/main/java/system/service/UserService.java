@@ -9,9 +9,6 @@ import system.model.User;
 
 import java.util.List;
 
-/**
- * Created by Max on 16.07.2017.
- */
 
 @Service
 @RequestMapping("/users")

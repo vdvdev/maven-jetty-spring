@@ -1,8 +1,5 @@
 package system.model;
 
-/**
- * Created by Max on 16.07.2017.
- */
 public class User {
     private String name;
     private String password;

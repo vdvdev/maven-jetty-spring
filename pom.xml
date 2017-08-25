@@ -70,7 +70,7 @@
                         <port>9999</port>
                     </httpConnector>
                     <webApp>
-                        <contextPath>/user-system</contextPath>
+                        <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
             </plugin>

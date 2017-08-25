@@ -6,10 +6,6 @@ import system.model.User;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by Max on 16.07.2017.
- */
-
 @Repository
 public class UserDao {
     private List<User> users = Arrays.asList(

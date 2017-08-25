@@ -11,6 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-    Hello from spring
+Hello from spring
+<p><a href="/users/validate">validate</a></p>
+<p><a href="/users/list">list</a></p>
+<p><a href="/test">test</a></p>
+
 </body>
 </html>
