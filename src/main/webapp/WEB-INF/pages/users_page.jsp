@@ -12,9 +12,9 @@
 </head>
 <body>
 Hello from spring
-<p><a href="/users/validate">validate</a></p>
-<p><a href="/users/list">list</a></p>
-<p><a href="/test">test</a></p>
+<p><a href="/user-system/users/validate">validate</a></p>
+<p><a href="/user-system/users/list">list</a></p>
+<p><a href="/user-system/test">test</a></p>
 
 </body>
 </html>

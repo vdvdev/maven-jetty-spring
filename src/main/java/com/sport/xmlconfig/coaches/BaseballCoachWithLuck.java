@@ -1,6 +1,6 @@
-package com.coaching.coachs;
+package com.sport.xmlconfig.coaches;
 
-import com.coaching.luck.Luck;
+import com.sport.xmlconfig.luck.Luck;
 
 public class BaseballCoachWithLuck extends BaseballCoach implements Coach {
     private Luck luck;

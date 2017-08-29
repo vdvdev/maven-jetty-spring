@@ -4,23 +4,29 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="workposition.properties"/>
+    <context:property-placeholder location="workPosition.properties"/>
 
-    <bean id="priorCoach" class="com.coaching.coachs.FootbalCoach"></bean>
+    <bean id="priorCoach" class="com.sport.xmlconfig.coaches.FootballCoach"></bean>
 
     <!--constructor injection-->
-    <bean id="thirdCoach" class="com.coaching.coachs.BaseballCoachWithLuck" >
+    <bean id="thirdCoach" class="com.sport.xmlconfig.coaches.BaseballCoachWithLuck" >
         <constructor-arg ref="luck1"/>
     </bean>
+    <bean class="com.sport.xmlconfig.coaches.FootballCoach"/>
 
     <!--setter injection-->
-    <bean id="4thCoach" class="com.coaching.coachs.FootballCoachWithLuck" >
+    <bean id="4thCoach" class="com.sport.xmlconfig.coaches.FootballCoachWithLuck" >
         <property name="luck" ref="luck2"/>
         <property name="power" value="classic power"/>
         <property name="firstName" value="${head.trainer.firstname}"/>
     </bean>
 
-    <bean id="luck1" class="com.coaching.luck.BaseLuck"></bean>
-    <bean id="luck2" class="com.coaching.luck.AdvancedLuck"></bean>
+    <!--init and destroy methods-->
+    <!--destroy doesn't run for prototype-->
+    <bean id="luck1" class="com.sport.xmlconfig.luck.BaseLuck"
+          init-method="luckInitiated"
+          destroy-method="luckLost"
+          scope="singleton"/>
+    <bean id="luck2" class="com.sport.xmlconfig.luck.AdvancedLuck"></bean>
 </beans>
 

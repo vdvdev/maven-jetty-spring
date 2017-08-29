@@ -1,8 +1,8 @@
-package com.coaching.coachs;
+package com.sport.xmlconfig.coaches;
 
-import com.coaching.luck.Luck;
+import com.sport.xmlconfig.luck.Luck;
 
-public class FootballCoachWithLuck extends FootbalCoach {
+public class FootballCoachWithLuck extends FootballCoach {
 
     private Luck luck;
     private String power;

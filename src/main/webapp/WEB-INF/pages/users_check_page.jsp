@@ -18,7 +18,7 @@
                 ducimus eaque perferendis quaerat vel? Assumenda beatae, blanditiis earum et, iste laborum, nemo
                 obcaecati odit optio perferendis praesentium quo rem repellendus sapiente sed?</p>
             <br>
-            <spring:form modelAttribute="userFromServer" method="post" action="/users/check">
+            <spring:form modelAttribute="userFromServer" method="post" action="/user-system/users/check">
                 <spring:input path="name"/>
                 <spring:input path="password"/>
                 <spring:button>check user</spring:button>

@@ -1,9 +1,9 @@
-package com.coaching;
+package com.sport.xmlconfig;
 
-import com.coaching.coachs.Coach;
+import com.sport.xmlconfig.coaches.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class CoachingApplication {
+public class CoachingApplicationXML {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
@@ -17,6 +17,11 @@ public class CoachingApplication {
 
         Coach coach4 = context.getBean("4thCoach", Coach.class);
         System.out.println(coach4.getDescription());
+
+        Coach coach5 = context.getBean("5thCoach", Coach.class);
+        System.out.println(coach5.getDescription());
+
+
         context.close();
     }
 }

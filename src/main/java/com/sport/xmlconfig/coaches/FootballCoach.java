@@ -1,6 +1,7 @@
-package com.coaching.coachs;
+package com.sport.xmlconfig.coaches;
 
-public class FootbalCoach implements Coach {
+
+public class FootballCoach implements Coach {
     public String getDescription() {
         return "I am a football coach";
     }

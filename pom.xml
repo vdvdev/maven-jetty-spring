@@ -50,7 +50,7 @@
                         <port>9999</port>
                     </httpConnector>
                     <webApp>
-                        <contextPath>/</contextPath>
+                        <contextPath>/user-system</contextPath>
                     </webApp>
                 </configuration>
             </plugin>

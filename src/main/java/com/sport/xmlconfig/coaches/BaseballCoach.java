@@ -1,4 +1,4 @@
-package com.coaching.coachs;
+package com.sport.xmlconfig.coaches;
 
 public abstract class BaseballCoach implements Coach {
     public String getDescription() {
