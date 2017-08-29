@@ -18,9 +18,6 @@ public class CoachingApplicationXML {
         Coach coach4 = context.getBean("4thCoach", Coach.class);
         System.out.println(coach4.getDescription());
 
-        Coach coach5 = context.getBean("5thCoach", Coach.class);
-        System.out.println(coach5.getDescription());
-
 
         context.close();
     }
