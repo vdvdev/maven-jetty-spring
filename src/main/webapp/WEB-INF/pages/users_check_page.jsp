@@ -12,7 +12,7 @@
     <div class="container">
         <div class="col-md-6">
             <br>
-            <h1 style="color: darkolivegreen">Validation for user</h1>
+            <h1 style="color: darkolivegreen">Validation mocking user</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, autem commodi cum deleniti, dolorem
                 earum eligendi id impedit iure natus necessitatibus placeat quia, repellat tempora veritatis? Beatae
                 ducimus eaque perferendis quaerat vel? Assumenda beatae, blanditiis earum et, iste laborum, nemo

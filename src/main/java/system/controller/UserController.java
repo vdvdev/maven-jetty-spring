@@ -35,7 +35,7 @@ public class UserController {
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public @ResponseBody
     String checkUser(@ModelAttribute("userFromServer") User user) {
-        if ("admin".equals(user.getName()) && "admin".equals(user.getPassword())) {
+        if ("admin1".equals(user.getName()) && "admin1".equals(user.getPassword())) {
             return "valid";
         }
         return "invalid";

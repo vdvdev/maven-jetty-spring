@@ -10,6 +10,7 @@ import java.util.List;
 public class UserDao {
     private List<User> users = Arrays.asList(
             new User("admin", "admin"),
+            new User("admin1", "admin1"),
             new User("user1", "user1"));
 
     public List<User> getAllUsers() {
